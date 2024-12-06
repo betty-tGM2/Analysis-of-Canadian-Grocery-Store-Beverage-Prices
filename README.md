@@ -1,4 +1,4 @@
-# Analysis-of-Canadian-Grocery-Store-Beverage-Prices
+# Cross-Vendor and Temporal Pricing Trends in Beverages
 
 ## Overview
 

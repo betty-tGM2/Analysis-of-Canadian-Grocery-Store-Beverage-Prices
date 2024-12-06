@@ -12,7 +12,7 @@ library(tidyverse)
 library(testthat)
 library(arrow)
 
-analysis_data <- arrow::read_parquet("/Users/bettyliu/Downloads/starter_folder-main/data/02-analysis_data/analysis_data.parquet")
+analysis_data <- arrow::read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 
 #### Test data ####

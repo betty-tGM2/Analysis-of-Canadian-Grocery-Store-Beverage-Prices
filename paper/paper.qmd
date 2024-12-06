@@ -3,7 +3,7 @@ title: "Cross-Vendor and Temporal Pricing Trends in Beverages"
 subtitle: "A Bayesian Analysis of Canadian Grocery Data"
 author: 
   - Betty (Zaihua) Liu
-thanks: "Code and data are available at: [https://github.com/RohanAlexander/starter_folder](https://github.com/RohanAlexander/starter_folder)."
+thanks: "Code and data are available at: [https://github.com/betty-tGM2/Analysis-of-Canadian-Grocery-Store-Beverage-Prices.git]."
 date: today
 date-format: long
 abstract: "This paper investigates pricing trends in the Canadian grocery sector, focusing on beverages across six major vendors. Using Bayesian modeling, we identify vendor-specific strategies, seasonal effects, and the influence of historical prices on current pricing. The analysis reveals significant differences between budget-friendly vendors like Walmart and premium retailers like Galleria, as well as seasonal markdown patterns in the fall months. These findings provide actionable insights for consumers, vendors, and policymakers, promoting competition and transparency in the grocery market."

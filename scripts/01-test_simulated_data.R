@@ -17,7 +17,7 @@ library(tidyverse)
 library(testthat)
 
 
-simulated_data <- read_csv("/Users/bettyliu/Downloads/starter_folder-main/data/00-simulated_data/simulated_data.csv")
+simulated_data <- read_csv("data/00-simulated_data/simulated_data.csv")
 
 # Test if the data was successfully loaded
 if (exists("simulated_data")) {

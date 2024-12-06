@@ -16,7 +16,7 @@ library(lubridate) # For date manipulation
 library(ggplot2)   # For visualizations
 
 #### Read data ####
-analysis_data <- arrow::read_parquet("/Users/bettyliu/Downloads/starter_folder-main/data/02-analysis_data/analysis_data.parquet")
+analysis_data <- arrow::read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 # Check unique months and their distribution
 unique_months <- unique(analysis_data$month)
@@ -119,8 +119,8 @@ vendor_summary <- analysis_data %>%
 print(vendor_summary)
 
 # Save results to CSV for further review
-write_csv(vendor_summary, "/Users/bettyliu/Downloads/starter_folder-main/other/exploratory/vendor_pricing_summary.csv")
-write_csv(outliers, "/Users/bettyliu/Downloads/starter_folder-main/other/exploratory/pricing_outliers.csv")
+write_csv(vendor_summary, "other/exploratory/vendor_pricing_summary.csv")
+write_csv(outliers, "other/exploratory/pricing_outliers.csv")
 
 # Summarize outliers by vendor
 outlier_summary <- outliers %>%
@@ -130,6 +130,6 @@ outlier_summary <- outliers %>%
 print(outlier_summary)
 
 # Save outlier summary
-write_csv(outlier_summary, "/Users/bettyliu/Downloads/starter_folder-main/other/exploratory/outlier_summary.csv")
+write_csv(outlier_summary, "other/exploratory/outlier_summary.csv")
 
 

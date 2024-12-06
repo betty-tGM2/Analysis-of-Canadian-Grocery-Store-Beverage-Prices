@@ -16,6 +16,11 @@ The repo is structured as:
 -   `paper` contains the files used to generate the paper, including the Quarto document and reference bibliography file, as well as the PDF of the paper. 
 -   `scripts` contains the R scripts used to simulate, download and clean data.
 
+## Raw Data Souce
+
+Due to the large size of the source data, it was not able to be uploaded to the repo. The link directs to the data is as follows: 
+https://jacobfilipp.com/hammer/
+
 ## Reading the Analysis Data
 To read the `.parquet` file in R:
 ```R

@@ -12,7 +12,7 @@ library(arrow)
 library(rstanarm) # For Bayesian modeling
 
 #### Read data ####
-analysis_data <- arrow::read_parquet("/Users/bettyliu/Downloads/starter_folder-main/data/02-analysis_data/analysis_data.parquet")
+analysis_data <- arrow::read_parquet("data/02-analysis_data/analysis_data.parquet")
 
 # Convert necessary columns to factors
 analysis_data <- analysis_data %>%
@@ -39,7 +39,7 @@ summary(bayesian_model)
 #### Save the model ####
 saveRDS(
   bayesian_model,
-  file = "/Users/bettyliu/Downloads/starter_folder-main/models/bayesian_model.rds"
+  file = "models/bayesian_model.rds"
 )
 
 #### Model Diagnostics ####
@@ -62,12 +62,12 @@ predictions <- posterior_predict(bayesian_model, newdata = new_data)
 print(predictions)
 
 # Save predictions to CSV
-write_csv(as.data.frame(predictions), "/Users/bettyliu/Downloads/starter_folder-main/other/modeling/predictions.csv")
+write_csv(as.data.frame(predictions), "other/modeling/predictions.csv")
 
 #### Save the Model ####
 saveRDS(
   bayesian_model,
-  file = "/Users/bettyliu/Downloads/starter_folder-main/models/bayesian_model.rds"
+  file = "models/bayesian_model.rds"
 )
 
 #### New Visualizations ####
